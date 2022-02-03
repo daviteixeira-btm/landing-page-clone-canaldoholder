@@ -1,53 +1,84 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body main #firts-section {
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../images/banner-first-section.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/banner-first-section.jpg);
 }
 
 h1 {
-    font-size: 2rem;
-    color: #7ad3c1;
-    font-weight: bold;
-    font-family: "Barlow",Sans-serif;
+  font-size: 2rem;
+  color: #7ad3c1;
+  font-weight: bold;
+  font-family: "Barlow", Sans-serif;
 }
 
 h2 {
-    color: #ffffd7;
-    font-size: 1.3rem;
-    font-weight: 400;
-    font-family: "Barlow",Sans-serif;
+  color: #ffffd7;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Barlow", Sans-serif;
 }
 
 #firts-section #primeira-linha #primeira-coluna form #campo-nome #input-name,
 #firts-section #primeira-linha #primeira-coluna form #campo-email #input-email {
-    color: #acafb0;
-    border-color: #434345; 
-    background-color: #434649;
+  color: #acafb0;
+  border-color: #434345;
+  background-color: #434649;
 }
 
 #firts-section #primeira-linha #primeira-coluna form button {
-    width: 100%;
-    border: none;
-    height: 4rem;
-    color: #0D1112;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: #ef8544;
+  width: 100%;
+  border: none;
+  height: 4rem;
+  color: #0d1112;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ef8544;
+  font-size: 1.2rem;
+}
+
+#firts-section #primeira-linha #primeira-coluna form button:hover {
+    background-color: #7ad3c1;
 }
 
 #firts-section #primeira-linha #primeira-coluna form p {
-    color: #ffffd7;
-    font-size: 1.3rem;
+  color: #ffffd7;
+  font-size: 1.3rem;
 }
 
 #firts-section #primeira-linha #primeira-coluna form p i {
-    color: #ef8544;
+  color: #ef8544;
+}
+
+.pulse {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation: pulse 0.6s infinite;
+  animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }
